@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{color:red}
+        a{font-size:13px}
+    </style>
+</head>
+<body>
+
+<form action="login" method="post">
+    {% csrf_token %}
+    <p>{{m}}</p>
+    <input type="text" name="user" placeholder="Username">
+    <input type="password" name="pasw" placeholder="password">
+    <input type="submit" value="Login">
+</form>
+<br>
+<a href="register">Are you not a member? register here</a>
+</body>
+</html>

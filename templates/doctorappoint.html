@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            display:block;
+            margin:auto;
+            padding:10px;
+            border:2px solid black;
+            width:50%;
+            margin-top:10%;
+            }
+         td,th{
+            border-top:1px solid black;
+            padding:10px;
+            text-align:center;
+            }
+          th{float:right}
+
+    </style>
+</head>
+<body>
+
+<table>
+    <tr><th>Patient Name : </th><td>{{a.patient.name}}</td></tr>
+    <tr><th>Date : </th><td>{{a.date}}</td></tr>
+    <tr><th>Time : </th><td>{{a.time}}</td></tr>
+</table>
+
+</body>
+</html>

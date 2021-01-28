@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{color:red}
+    </style>
+</head>
+<body>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="name">
+    <input type="email" name="email" placeholder="email">
+    <input type="number" name="phone" placeholder="phone">
+    <select name="role">
+        <option>Patient</option>
+        <option>Doctor</option>
+    </select>
+    <input type="text" name="user" placeholder="user">
+    <p>{{m}}</p>
+    <input type="password" name="pasw" placeholder="password">
+    <input type="submit" value="Register">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Hi {{user.name}}</h2>
+
+        <table>
+
+            {% for i in appointment %}
+                {% if i.is_active == True %}
+                    <tr>
+                        <td>{{i.date}}</td>
+                        <td><a href="doctor_appointment/{{i.id}}"><button>Appointments</button></a></td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+
+        </table>
+
+<a href="logout"><button>logout</button></a>
+
+</body>
+</html>

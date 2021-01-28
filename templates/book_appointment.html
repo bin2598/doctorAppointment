@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="book" method="post">
+    {% csrf_token %}
+    <select name="doctor">
+        {% for i in doctor %}
+        <option>{{i.name}}</option>
+        {% endfor %}
+    </select>
+    <input type="date" name="date" placeholder="Type the date you need">
+    <input type="time" name="time" placeholder="Which time you are free">
+    <input type="submit" value="Book Appointment">
+</form>
+</body>
+</html>
